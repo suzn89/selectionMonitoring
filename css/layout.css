@@ -1,0 +1,21 @@
+body {
+  background: #282828;
+}
+
+#header {
+  float: left;
+  width: 100%;
+  height: 60px;
+  background: #1E1E1E;
+}
+
+#header__logo {
+  width: 180px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: #cccccc;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

@@ -3,19 +3,124 @@ body {
 }
 
 #header {
-  float: left;
   width: 100%;
   height: 60px;
-  background: #1E1E1E;
+  background: #1e1e1e;
 }
 
-#header__logo {
+.header__logo {
   width: 180px;
+  padding: 9px 10px;
 }
 
-@media (max-width: 1024px) {
+#login {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: url("../images/login_bg.png");
+  background-size: cover;
+}
+
+.logintext {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 60%;
+  max-width: 840px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.loginbox {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  max-width: 730px;
+  height: 100%;
+  padding-top: 100px;
+  background: #262626;
+}
+
+.loginbox__area {
+  width: 500px;
+  margin: 0px auto 0;
+}
+
+.loginbox__simbol {
+  margin-bottom: 100px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 38px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.loginbox__simbol h2 {
+  font-weight: normal;
+}
+
+.loginbox__form {
+  color: #ffffff;
+}
+
+.loginbox__form .box_login_ipt {
+  margin-bottom: 30px;
+}
+
+.loginbox__form .i_label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.loginbox__form input[type='text'], .loginbox__form input[type='password'] {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  background: #313131;
+  border-radius: 5px;
+  border: 1px solid #727272;
+  font-size: 16px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.loginbox__form .btn_login input {
+  display: block;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 4px;
+  background: #f57637;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media (max-width: 1279px) {
   body {
-    background: #cccccc;
+    min-width: 1024px;
+  }
+  .logintext {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 50%;
+  }
+  .loginbox__area {
+    width: 400px;
+    margin: 0px auto;
+  }
+  .loginbox__simbol {
+    margin-bottom: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=layout.css.map */

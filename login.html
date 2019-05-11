@@ -9,8 +9,35 @@
   <link rel="stylesheet" href="../css/layout.css">
 </head>
 <body>
-  <header id="header">
-    <h1 class="header__logo"><a href="#"><img src="images/logo.png" alt="e-curations"></a><span class="blind">e-curations</span></h1>    
+  <header id="header" class="header">
+    <h1 class="header__logo"><a href="#"><img src="images/logo.png" alt="e-curations" width="180"></a><span class="blind">e-curations</span></h1>    
   </header>
+  <section id="login">
+    <div class="logintext">
+      <img src="images/login_text.png" alt="선별관제시스템" width="80%">
+    </div>
+    <div class="loginbox">
+      <div class="loginbox__area">
+        <div class="loginbox__simbol">
+          <img src="images/simbol.png" alt="simbol">
+          <h2>Sign in</h2>
+        </div>
+        <form action="" id="" name="login" method="post" class="loginbox__form">
+          <fieldset>
+            <legend>로그인</legend>
+            <div class="box_login_ipt">
+            <label for="userid" class="i_label">USER ID</label>
+            <input type="text" name="userid" id="userid" class="iptbox">
+            </div>
+            <div class="box_login_ipt">
+            <label for="userpw" class="i_label">PASSWORD</label>
+            <input type="password" name="userpw" id="userpw" class="iptbox">
+            </div>
+            <span class="btn_login"><input type="submit" value="로그인"></span>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

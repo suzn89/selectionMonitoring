@@ -1,4 +1,5 @@
-$bgColor: #282828;
+$bgColor:#282828;
+$contHeight:calc(100vh - 60px);
 @mixin iconFont {
   font-family:'ecurations';
 }
@@ -21,23 +22,118 @@ $bgColor: #282828;
   transition:all 0.5s ease-in-out 0.01s;
 }
 
-
-// 기본 스타일 적용
+// 기본 CSS를 작성합니다.
+// 기본으로 작성되는 CSS는 1279px보다 큰 화면에서 작동 됩니다.
 body {
-  background: $bgColor;
+  background:$bgColor;
 }
 #header {
-  float: left;
-  width: 100%;
-  height: 60px;
-  background: #1E1E1E;  
-  &__logo {
-    width: 180px;
-  }  
+  width:100%;
+  height:60px;
+  background:#1e1e1e;
 }
-@media (max-width: 1024px) {
-  body {
-    background: #cccccc;
+.header {
+  &__logo {
+    width:180px;
+    padding:9px 10px;
+  }
+}
+#login {
+  position:relative;
+  width:100%;
+  height:$contHeight;
+  background:url('../images/login_bg.png');
+  background-size:cover;
+}
+.logintext {
+  position:absolute;
+  left:20px;
+  top:50%;
+  transform:translate(0, -50%);
+  width:60%;
+  max-width:840px;
+  transition: all 0.5s;
+}
+.loginbox {
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:50%;
+  max-width:730px;
+  height:100%;
+  padding-top: 100px;
+  background:#262626;
+  &__area {
+    width:500px;
+    margin:0px auto 0;
+  }
+  &__simbol {
+    margin-bottom:100px;
+    text-align:center;
+    color:#ffffff;
+    font-size:38px;
+    transition: all 0.5s;
+    h2 {
+      font-weight:normal;
+    }
+  }
+  &__form {
+    color:#ffffff;
+    .box_login_ipt {
+      margin-bottom:30px;
+    }
+    .i_label {
+      display:block;
+      margin-bottom:8px;
+      font-size:17px;
+      color:#ffffff;
+    }
+    input[type='text'],input[type='password'] {
+      width:100%;
+      height:45px;
+      padding:0 10px;
+      background:#313131;
+      border-radius:5px;
+      border:1px solid #727272;
+      font-size:16px;
+      line-height:45px;
+      color:#ffffff;
+    }
+    .btn_login input {
+      display:block;
+      width:100%;
+      height: 55px;
+      line-height: 55px;
+      border-radius: 4px;
+      background:#f57637;
+      color:#ffffff;
+      font-size:20px;
+    }
   }
 }
 
+// 데스크탑 (가로 해상도가 1280px 보다 작은 화면에 적용)
+@media (max-width: 1279px) {
+  body {
+    min-width:1024px;
+  }
+  .logintext {
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translate(0, -50%);
+    width:50%;
+  }
+  .loginbox {
+    &__area {
+      width:400px;
+      margin:0px auto;
+    }
+    &__simbol {
+      margin-bottom:100px;
+      text-align:center;
+      color:#ffffff;
+      font-size:30px;      
+    }
+  }
+}

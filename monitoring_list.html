@@ -11,8 +11,315 @@
 <body>
   <header id="header" class="header">
     <h1 class="header__logo"><a href="#"><img src="images/logo.png" alt="e-curations" width="180"></a><span class="blind">e-curations</span></h1>    
-  </header>
-  <section id="login">    
-  </section>
+  </header>  
+  <div id="top" class="top">
+    <div class="top__title">
+      <h2>상태모니터링</h2>
+    </div>
+    <div class="top__user">
+      <p class="message"><span class="name">관제요원1</span>님 로그인중입니다.</p>
+      <a href="#" class="btn__logout">로그아웃</a>
+    </div>
+  </div>
+  <div id="content">
+    <div class="left">
+      <div class="left__live boxmodel">
+        <h3>실시간현황</h3>
+        <dl class="left__count">
+          <dt class="left__count--title">전체</dt>
+          <dd class="left__count--number"><span>012</span>건</dd>
+        </dl>
+        <dl class="left__count w50">
+          <dt class="left__count--title">대기</dt>
+          <dd class="left__count--number"><span>012</span>건</dd>
+        </dl>
+        <dl class="left__count w50 fr">
+          <dt class="left__count--title">완료</dt>
+          <dd class="left__count--number"><span>000</span>건</dd>
+        </dl>
+        <p class="time"><b>28</b>초후 새로고침 됩니다. <a href="#" class="btn__refresh"><span class="blind">새로고침</span></a></p>
+      </div>
+      <div class="left__status boxmodel">
+        <h3>유형별 실시간 현황</h3>
+        <div class="status_wrap">
+          <!-- // 알고리즘유형 구분-->
+          <a class="status" href="#">
+            <ul>
+              <li class="status__stars">★<br>★<br>★</li>
+              <li class="status__title">사라짐</li>
+              <li class="status__number"><span>001</span>건</li>
+            </ul>
+          </a>     
+          <!-- // 알고리즘유형 구분 끝-->
+          <a class="status active" href="#"> <!-- 선택시 active 클래스 추가-->
+            <ul>
+              <li class="status__stars">★<br>★<br>★</li>
+              <li class="status__title">사라짐</li>
+              <li class="status__number"><span>001</span>건</li>
+            </ul>
+          </a>  
+        </div>  
+        <p class="time"><b>28</b>초후 새로고침 됩니다. <a href="#" class="btn__refresh"><span class="blind">새로고침</span></a></p>
+      </div>
+    </div> <!-- // left -->
+    <div class="center">
+      <div class="article">
+        <h3>최근 이벤트 목록</h3>
+        <div class="datalist">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>카메라명</th>
+                <th>개소(위치)명</th>
+                <th>이벤트타입</th>
+                <th>이벤트발생일시</th>
+                <th>저확도</th>
+                <th>처리상태</th>
+                <th>처리자</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>카메라이름001</td>
+                <td>마리오타워 주차장 입구</td>
+                <td>쓰러짐</td>
+                <td>2019-05-02 15:00:09</td>
+                <td>80%</td>
+                <td>미확인</td>
+                <td>홍길동</td>
+              </tr>             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> <!-- // center -->
+    <div class="right">
+      <div class="detail">
+        <h3>이벤트 상세</h3> 
+        <img src="images/test.png" alt="테스트이미지" width="100%">     
+        <div class="datalist">
+          <table>
+            <tr>
+              <th>카메라이름</th>
+              <td>기기이름 001</td>
+            </tr>
+            <tr>
+              <th>개소명</th>
+              <td>마리오타워 주차장 입구</td>
+            </tr>
+            <tr>
+              <th>이벤트타입</th>
+              <td>쓰러짐</td>
+            </tr>
+            <tr>
+              <th>이벤트발생일시</th>
+              <td>2019-05-02 15:00:20</td>
+            </tr>
+            <tr>
+              <th>정확도</th>
+              <td>80%</td>
+            </tr>
+            <tr>
+              <th>처리상태</th>
+              <td>
+                <div class="input__select--small">
+                  <select name="" id="" title="해당항목선택">
+                    <option value="">미확인</option>
+                    <option value="">처리중</option>
+                    <option value="">처리완료</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>처리자</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>보고내용</th>
+              <td>
+                <textarea name="" id="" cols="30" rows="6" class="input__txt"></textarea>
+              </td>
+            </tr>
+          </table>          
+        </div>
+          <div class="btn__right">
+            <a href="#" class="btn__small btn__small--save">저장</a>
+          </div>
+      </div>
+    </div> <!-- // right -->
+  </div> <!-- // content -->
 </body>
 </html>

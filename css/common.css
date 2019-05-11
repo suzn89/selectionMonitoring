@@ -1,2 +1,120 @@
 @import url(reset.css);
+@import url(style.css);
+@font-face {
+  font-family: 'ecurations';
+  src: url("../fonts/ecurations.eot?r8r6ve");
+  src: url("../fonts/ecurations.eot?r8r6ve#iefix") format("embedded-opentype"), url("../fonts/ecurations.ttf?r8r6ve") format("truetype"), url("../fonts/ecurations.woff?r8r6ve") format("woff"), url("../fonts/ecurations.svg?r8r6ve#ecurations") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ecurations' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #313131;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #282828;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #282828;
+}
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+  width: 16px;
+  height: 16px;
+  background: #2D2D2D;
+}
+
+.input__txt {
+  width: 100%;
+  padding: 5px;
+  background: #464646;
+  color: #ffffff;
+}
+
+.btn__right {
+  width: 100%;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.btn__small {
+  display: inline-block;
+  min-width: 80px;
+  height: 28px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn__small--save {
+  background: #5a5a5a;
+}
+
+.btn__small--save:hover {
+  background: #249F87;
+  color: #ffffff;
+}
+
+.input__select--small {
+  position: relative;
+  min-width: 100px;
+  height: 25px;
+  background: #464646;
+}
+
+.input__select--small select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  width: 100%;
+  line-height: 25px;
+  margin: 0;
+  padding: 0 5px;
+  border: 0;
+  background: #464646;
+  color: #ffffff;
+  z-index: 200;
+}
+
+.input__select--small select::-ms-expand {
+  display: none;
+  /*IE10*/
+}
+
+.input__select--small:after {
+  position: absolute;
+  font-family: 'ecurations';
+  content: '\e905';
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #ffffff;
+  right: 10px;
+  top: 5px;
+  font-size: 10px;
+}
 /*# sourceMappingURL=common.css.map */

@@ -154,4 +154,16 @@
   color: #ffffff;
   font-weight: bold;
 }
+
+.txr {
+  text-align: right !important;
+}
+
+.txl {
+  text-align: left !important;
+}
+
+.txc {
+  text-align: center !important;
+}
 /*# sourceMappingURL=common.css.map */

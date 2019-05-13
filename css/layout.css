@@ -355,7 +355,7 @@ body {
 
 #content .center .article .datalist__type {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
 }
 
@@ -430,8 +430,8 @@ body {
   background: #000000;
   font-size: 11px;
   color: #ffffff;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #content .center .article .datalist .itemlist > li .item__title--name {
@@ -446,8 +446,8 @@ body {
   width: 100%;
   height: calc( ( (100vh - 210px) / 4 ) - 30px);
   border: 3px solid #000000;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #content .center .article .datalist .itemlist > li .item__image img {
@@ -525,6 +525,39 @@ body {
   border-color: #249f87;
 }
 
+#content .center .article .datalist .map {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#content .center .article .datalist .map__event {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background: rgba(235, 121, 25, 0.5);
+  z-index: 200;
+  text-align: center;
+  line-height: 95px;
+  letter-spacing: -2px;
+}
+
+#content .center .article .datalist .map__event--count {
+  display: inline-block;
+  width: 71px;
+  height: 71px;
+  font-size: 22px;
+  line-height: 71px;
+  color: #ffffff;
+  border-radius: 71px;
+  background: #f08933;
+  opacity: 1 !important;
+  z-index: 201;
+}
+
 #content .right {
   float: right;
   width: 470px;
@@ -545,6 +578,53 @@ body {
   margin-bottom: 10px;
   color: #989898;
   font-size: 18px;
+}
+
+#content .right .detail .tinytable {
+  clear: both;
+  background: #282828;
+  min-height: 250px;
+}
+
+#content .right .detail .tinytable table th, #content .right .detail .tinytable table td {
+  padding: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #dfdfdf;
+  text-align: center;
+  word-break: keep-all;
+  border-bottom: 1px solid #414141;
+}
+
+#content .right .detail .tinytable table th {
+  background: #232323;
+  color: #ffffff;
+}
+
+#content .right .detail .tinytable table tr:hover td {
+  background: #249f87;
+  color: #ffffff;
+}
+
+#content .right .detail .tinytable2 {
+  clear: both;
+  background: #282828;
+  min-height: 250px;
+}
+
+#content .right .detail .tinytable2 table th, #content .right .detail .tinytable2 table td {
+  padding: 5px 5px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #dfdfdf;
+  text-align: left;
+  word-break: keep-all;
+  border-bottom: 1px solid #414141;
+}
+
+#content .right .detail .tinytable2 table th {
+  background: #232323;
+  color: #ffffff;
 }
 
 #content .right .detail .datalist {

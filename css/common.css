@@ -117,4 +117,41 @@
   top: 5px;
   font-size: 10px;
 }
+
+.pagenation {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.pagenation ul {
+  text-align: center;
+}
+
+.pagenation ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagenation ul li a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  color: #8B8B8B;
+  font-size: 12px;
+}
+
+.pagenation ul li a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pagenation ul li a i {
+  line-height: 15px;
+}
+
+.pagenation .pagenation__btn--current {
+  color: #ffffff;
+  font-weight: bold;
+}
 /*# sourceMappingURL=common.css.map */

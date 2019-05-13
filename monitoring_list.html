@@ -66,6 +66,13 @@
       <div class="article">
         <h3>최근 이벤트 목록</h3>
         <div class="datalist">
+          <div class="datalist__type">
+            <ul>
+              <li class="datalist__type--list select"><a href="#"><i class="icon-subject"></i></a></li> <!-- 보기방식 선택시 select 클래스 추가-->
+              <li class="datalist__type--thumb"><a href="#"><i class="icon-module"></i></a></li>
+              <li class="datalist__type--map"><a href="#"><i class="icon-pin"></i></a></li>
+            </ul>
+          </div>
           <table>
             <thead>
               <tr>
@@ -261,9 +268,25 @@
                 <td>홍길동</td>
               </tr>             
             </tbody>
-          </table>
+          </table>          
         </div>
-      </div>
+        <div class="pagenation">
+          <ul>
+            <li><a href="#" class="pagenation__btn"><i class="icon-leftarrow"></i><span class="blind">이전</span></a></li>
+            <li><a href="#" class="pagenation__btn--current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#" class="pagenation__btn--next"><i class="icon-rightarrow"></i><span class="blind">다음</span></a></li>         
+          </ul>
+        </div>
+      </div>     
     </div> <!-- // center -->
     <div class="right">
       <div class="detail">

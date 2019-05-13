@@ -1,31 +1,28 @@
 $bgColor:#282828;
-$areaColor: #303030;
-$areaColor2: #313131;
+$areaColor:#303030;
+$areaColor2:#313131;
 $primaryColor:#f08933;
-$secondaryColor:#249F87;
-$warningColor:#EE165F;
-$primaryHover:#F57637;
-$headBackground: #232323;
-$ableColor: #464646;
-$disableColor: #2A2A2A;
+$secondaryColor:#249f87;
+$warningColor:#ee165f;
+$primaryHover:#f57637;
+$headBackground:#232323;
+$ableColor:#464646;
+$disableColor:#2a2a2a;
 //폰트관련
 $titleColor:#989898;
 $fontWhite:#ffffff;
-$fontData: #8B8B8B;
+$fontData:#8b8b8b;
 //인풋
-$selectColor:#B0B1B3;
+$selectColor:#b0b1b3;
 $selectDisable:#575757;
-
-
 $contHeight:calc(100vh - 60px);
 $panelHeight:calc(100vh - 125px);
 
 // 세로 2번 박스 높이 계산용
 $secondBoxHeight:calc(100vh - 365px);
 $secondInnerHeight:calc(100vh - 365px - 85px);
-
-$centerWidth: calc(100% - 745px);
-$centerContHeight: calc(100vh - 210px);
+$centerWidth:calc(100% - 745px);
+$centerContHeight:calc(100vh - 210px);
 @mixin iconFont {
   font-family:'ecurations';
 }
@@ -78,7 +75,7 @@ body {
   transform:translate(0, -50%);
   width:60%;
   max-width:840px;
-  transition: all 0.5s;
+  transition:all 0.5s;
 }
 .loginbox {
   position:absolute;
@@ -87,7 +84,7 @@ body {
   width:50%;
   max-width:730px;
   height:100%;
-  padding-top: 100px;
+  padding-top:100px;
   background:#262626;
   &__area {
     width:500px;
@@ -98,7 +95,7 @@ body {
     text-align:center;
     color:#ffffff;
     font-size:38px;
-    transition: all 0.5s;
+    transition:all 0.5s;
     h2 {
       font-weight:normal;
     }
@@ -128,9 +125,9 @@ body {
     .btn_login input {
       display:block;
       width:100%;
-      height: 55px;
-      line-height: 55px;
-      border-radius: 4px;
+      height:55px;
+      line-height:55px;
+      border-radius:4px;
       background:#f57637;
       color:#ffffff;
       font-size:20px;
@@ -138,279 +135,297 @@ body {
   }
 }
 .top {
-  position: relative;
-  width: 100%;
-  height: 45px;
-  border-top: 1px solid #363636;
-  border-bottom: 1px solid #363636;
+  position:relative;
+  width:100%;
+  height:45px;
+  border-top:1px solid #363636;
+  border-bottom:1px solid #363636;
   background:$areaColor;
-  &__title {    
-    text-align: center;
-    font-size: 16px;
-    line-height: 45px;
-    color: #ffffff;    
+  &__title {
+    text-align:center;
+    font-size:16px;
+    line-height:45px;
+    color:#ffffff;
   }
   &__user {
-    position: absolute;
-    right: 10px;
-    top: 10px;    
-    font-size: 15px;
-    color: #B4B4B4;
+    position:absolute;
+    right:10px;
+    top:10px;
+    font-size:15px;
+    color:#b4b4b4;
     .message {
       float:left;
     }
     .btn__logout {
       display:inline-block;
-      width: 70px;
-      height: 25px;
-      margin-left: 8px;
-      line-height: 25px;
-      border-radius: 4px;
+      width:70px;
+      height:25px;
+      margin-left:8px;
+      line-height:25px;
+      border-radius:4px;
       border:1px solid #707070;
-      text-align: center;
-      font-size: 12px;   
-      color: #707070;
+      text-align:center;
+      font-size:12px;
+      color:#707070;
       &:hover {
         background:#2a2a2a;
-        color: #989898;
-      } 
+        color:#989898;
+      }
     }
   }
 }
 #content {
-  padding: 10px;
+  padding:10px;
   .boxmodel {
-    padding: 10px;
+    padding:10px;
     h3 {
-      margin-bottom: 10px;
-      font-size: 18px;
-      color: $titleColor;      
+      margin-bottom:10px;
+      font-size:18px;
+      color:$titleColor;
     }
     .time {
       float:right;
-      margin-top: 8px;
-      .btn__refresh {        
+      margin-top:8px;
+      .btn__refresh {
         float:right;
-        position: relative;
-        width: 15px;
-        height: 15px;
-        margin-left: 5px;  
+        position:relative;
+        width:15px;
+        height:15px;
+        margin-left:5px;
         &:before {
-          position: absolute;
-          top: 0px;          
+          position:absolute;
+          top:0px;
           @include iconFont();
-          content: '\e920';
-          color: #565656;          
+          content:'\e920';
+          color:#565656;
         }
-      }      
+      }
     }
   }
   .left {
-    float: left;
-    width: 275px;
-    height: $panelHeight;
-    padding-right: 5px;
+    float:left;
+    width:275px;
+    height:$panelHeight;
+    padding-right:5px;
     &__live {
-      overflow: hidden;
-      background: $areaColor2;      
-      margin-bottom: 10px;
+      overflow:hidden;
+      background:$areaColor2;
+      margin-bottom:10px;
     }
     &__count {
-      padding: 10px;
-
-      background: $headBackground;
+      padding:10px;
+      background:$headBackground;
       &--title {
-        color: $fontWhite;
-        font-size: 15px;
+        color:$fontWhite;
+        font-size:15px;
       }
       &--number {
-        text-align: right;
-        color: $fontData;
+        text-align:right;
+        color:$fontData;
         span {
-          color: $primaryHover;
-          font-size: 22px;
-          font-weight: bold;
+          color:$primaryHover;
+          font-size:22px;
+          font-weight:bold;
         }
-      }      
+      }
     }
     .w50 {
-      float: left;
-      width: 122px;      
+      float:left;
+      width:122px;
       margin-top:5px;
     }
     .fr {
       float:right;
     }
     &__status {
-      overflow: hidden;
-      height: $secondBoxHeight;
-      background: $areaColor2;
+      overflow:hidden;
+      height:$secondBoxHeight;
+      background:$areaColor2;
       .status_wrap {
-        height: $secondInnerHeight;
-        overflow-y: auto;
+        height:$secondInnerHeight;
+        overflow-y:auto;
       }
       .status {
-        display: block;        
-        padding: 9px;
-        margin-bottom: 5px;
-        background: $headBackground;
+        display:block;
+        padding:9px;
+        margin-bottom:5px;
+        background:$headBackground;
         ul {
-          overflow: hidden;
+          overflow:hidden;
           display:block;
-          width: 100%;
+          width:100%;
         }
         ul li {
-          float: left;          
+          float:left;
         }
         &__stars {
-          float: left;
-          width: 11px;
-          margin-right: 10px;
-          line-height: 1;
-          color: $warningColor;
+          float:left;
+          width:11px;
+          margin-right:10px;
+          line-height:1;
+          color:$warningColor;
         }
         &__title {
-          float: left;
-          line-height: 42px;
-          color: $fontWhite;
-          font-size: 15px;
+          float:left;
+          line-height:42px;
+          color:$fontWhite;
+          font-size:15px;
         }
         &__number {
-          float: right !important;
-          line-height: 42px;
-          color: $fontData;
+          float:right !important;
+          line-height:42px;
+          color:$fontData;
           span {
-            font-size: 18px;
+            font-size:18px;
             color:$primaryHover;
-            font-weight: bold;
+            font-weight:bold;
           }
         }
         &:hover {
-          background: #F08933;  
-          color: #ffffff;
+          background:#f08933;
+          color:#ffffff;
           .status__title {
-            color: #2A2A2A;
-            font-weight: bold;
+            color:#2a2a2a;
+            font-weight:bold;
           }
           .status__number {
-            color: #2A2A2A;            
+            color:#2a2a2a;
             span {
-              font-size: 18px;
+              font-size:18px;
               color:$headBackground;
-              font-weight: bold;
+              font-weight:bold;
               color:#ffffff;
             }
           }
         }
-      }  
+      }
       .status.active {
-        background: #f08933;
-        color: #ffffff;
+        background:#f08933;
+        color:#ffffff;
         .status__title {
           color:#2a2a2a;
-          font-weight: bold;
+          font-weight:bold;
         }
         .status__number {
-          color:#1E1E1E;
+          color:#1e1e1e;
           span {
-            font-size: 18px;
+            font-size:18px;
             color:$headBackground;
-            font-weight: bold;
-            color: #ffffff;
+            font-weight:bold;
+            color:#ffffff;
           }
         }
-      }    
+      }
     }
   }
   .center {
-    float: left;
-    width: $centerWidth;
-    height: $panelHeight;
-    padding-left: 5px;
-    padding-right: 5px;
+    float:left;
+    width:$centerWidth;
+    height:$panelHeight;
+    padding-left:5px;
+    padding-right:5px;
     .article {
-      position: relative;;      
-      width: 100%;
-      height: 100%;
-      padding: 10px;
-      background: $areaColor;      
+      position:relative;;
+      width:100%;
+      height:100%;
+      padding:10px;
+      background:$areaColor;
       h3 {
-        float: left;
-        margin-bottom: 10px;
-        color: $titleColor;
-        font-size: 18px;        
+        float:left;
+        margin-bottom:10px;
+        color:$titleColor;
+        font-size:18px;
       }
       .datalist {
-        position: relative;
-        clear: both;
-        width: 100%;
-        height: $centerContHeight;
+        clear:both;
+        width:100%;
+        height:$centerContHeight;
         overflow-y:auto;
-        background: $bgColor;    
-        th, td {
-          padding: 8px;
-          color: $fontData;
-          font-weight: normal;
-          font-size: 12px;
-          text-align: center;
-          word-break: keep-all;
-          border-bottom: 1px solid #414141;          
+        background:$bgColor;
+        &__type {
+          position:absolute;
+          right:0;
+          top:0;
+          &--list,&--thumb,&--map {
+            display:inline-block;
+          }
+          a {
+            display:block;
+            width: 46px;
+            height: 46px;
+            text-align:center;
+            line-height: 46px;
+            color: #5a5a5a;
+          }
+          ul li.select a {
+            color:#ffffff;
+            background: $secondaryColor;
+          }
+        }
+        th,td {
+          padding:8px;
+          color:$fontData;
+          font-weight:normal;
+          font-size:12px;
+          text-align:center;
+          word-break:keep-all;
+          border-bottom:1px solid #414141;
         }
         th {
-          background: $headBackground;
-          color: $fontWhite; 
+          background:$headBackground;
+          color:$fontWhite;
         }
         tr {
           &:hover td {
-            background: $secondaryColor;
-            color: $fontWhite;
+            background:$secondaryColor;
+            color:$fontWhite;
           }
-        }        
+        }
       }
-    }    
+    }
   }
   .right {
     float:right;
-    width: 470px;
-    height: $panelHeight;
-    padding-left: 5px; 
-    .detail{
-      overflow-y: auto;
-      background: $areaColor;
-      width: 100%;
-      height: 100%;
-      padding: 10px;
+    width:470px;
+    height:$panelHeight;
+    padding-left:5px;
+    .detail {
+      overflow-y:auto;
+      background:$areaColor;
+      width:100%;
+      height:100%;
+      padding:10px;
       h3 {
-        float: left;
-        margin-bottom: 10px;
-        color: $titleColor;
-        font-size: 18px;        
+        float:left;
+        margin-bottom:10px;
+        color:$titleColor;
+        font-size:18px;
       }
       .datalist {
-        position: relative;
-        clear: both;
-        width: 100%;        
+        position:relative;
+        clear:both;
+        width:100%;
         overflow-y:auto;
-        background: $bgColor;
+        background:$bgColor;
         table {
-          width: 100%;
-        }    
-        th, td {
-          padding: 8px;
-          color: $fontData;
-          font-weight: normal;
-          font-size: 12px;
-          color: $fontWhite;
-          text-align: left;          
-          word-break: keep-all;
-          border-bottom: 1px solid #414141;                    
+          width:100%;
+        }
+        th,td {
+          padding:8px;
+          color:$fontData;
+          font-weight:normal;
+          font-size:12px;
+          color:$fontWhite;
+          text-align:left;
+          word-break:keep-all;
+          border-bottom:1px solid #414141;
         }
         th {
-          background: $headBackground;
-          color: $fontWhite; 
-        }             
+          background:$headBackground;
+          color:$fontWhite;
+        }
       }
-    }       
+    }
   }
 }
 // 데스크탑 (가로 해상도가 1280px 보다 작은 화면에 적용)
@@ -434,16 +449,16 @@ body {
       margin-bottom:100px;
       text-align:center;
       color:#ffffff;
-      font-size:30px;      
+      font-size:30px;
     }
   }
   .article {
     .datalist {
-      width: 100%;
+      width:100%;
       overflow-x:auto;
       table {
-        width: 650px;
-      }      
+        width:650px;
+      }
     }
   }
 } // max-width: 1279px

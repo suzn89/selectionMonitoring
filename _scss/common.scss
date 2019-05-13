@@ -11,6 +11,10 @@ $primaryHover:#F57637;
 $headBackground: #232323;
 $ableColor: #464646;
 $disableColor: #2A2A2A;
+//폰트관련
+$titleColor:#989898;
+$fontWhite:#ffffff;
+$fontData: #8B8B8B;
 //인풋
 $selectColor:#B0B1B3;
 $selectDisable:#575757;
@@ -114,5 +118,37 @@ width:16px;height:16px;background:#2D2D2D;}
     right: 10px;
     top: 5px;
     font-size: 10px;    
+  }
+}
+
+// 페이지네이션
+.pagenation {
+  width: 100%;
+  margin-top: 8px;
+  ul {
+    text-align: center;
+  }
+  ul li {
+    display:inline-block;
+    vertical-align: middle;
+    a {
+      display:block;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      color: $fontData;
+      font-size: 12px;
+      &:hover {
+        color: $fontWhite;
+        font-weight: bold;
+      }
+      i {
+        line-height: 15px;
+      }
+    }
+  }
+  .pagenation__btn--current {
+    color: $fontWhite;
+    font-weight: bold;    
   }
 }

@@ -121,7 +121,7 @@ body {
   right: 10px;
   top: 10px;
   font-size: 15px;
-  color: #B4B4B4;
+  color: #b4b4b4;
 }
 
 .top__user .message {
@@ -206,11 +206,11 @@ body {
 
 #content .left__count--number {
   text-align: right;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 #content .left__count--number span {
-  color: #F57637;
+  color: #f57637;
   font-size: 22px;
   font-weight: bold;
 }
@@ -258,7 +258,7 @@ body {
   width: 11px;
   margin-right: 10px;
   line-height: 1;
-  color: #EE165F;
+  color: #ee165f;
 }
 
 #content .left__status .status__title {
@@ -271,27 +271,27 @@ body {
 #content .left__status .status__number {
   float: right !important;
   line-height: 42px;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 #content .left__status .status__number span {
   font-size: 18px;
-  color: #F57637;
+  color: #f57637;
   font-weight: bold;
 }
 
 #content .left__status .status:hover {
-  background: #F08933;
+  background: #f08933;
   color: #ffffff;
 }
 
 #content .left__status .status:hover .status__title {
-  color: #2A2A2A;
+  color: #2a2a2a;
   font-weight: bold;
 }
 
 #content .left__status .status:hover .status__number {
-  color: #2A2A2A;
+  color: #2a2a2a;
 }
 
 #content .left__status .status:hover .status__number span {
@@ -312,7 +312,7 @@ body {
 }
 
 #content .left__status .status.active .status__number {
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
 
 #content .left__status .status.active .status__number span {
@@ -346,7 +346,6 @@ body {
 }
 
 #content .center .article .datalist {
-  position: relative;
   clear: both;
   width: 100%;
   height: calc(100vh - 210px);
@@ -354,9 +353,33 @@ body {
   background: #282828;
 }
 
+#content .center .article .datalist__type {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#content .center .article .datalist__type--list, #content .center .article .datalist__type--thumb, #content .center .article .datalist__type--map {
+  display: inline-block;
+}
+
+#content .center .article .datalist__type a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  color: #5a5a5a;
+}
+
+#content .center .article .datalist__type ul li.select a {
+  color: #ffffff;
+  background: #249f87;
+}
+
 #content .center .article .datalist th, #content .center .article .datalist td {
   padding: 8px;
-  color: #8B8B8B;
+  color: #8b8b8b;
   font-weight: normal;
   font-size: 12px;
   text-align: center;
@@ -370,7 +393,7 @@ body {
 }
 
 #content .center .article .datalist tr:hover td {
-  background: #249F87;
+  background: #249f87;
   color: #ffffff;
 }
 
@@ -410,7 +433,7 @@ body {
 
 #content .right .detail .datalist th, #content .right .detail .datalist td {
   padding: 8px;
-  color: #8B8B8B;
+  color: #8b8b8b;
   font-weight: normal;
   font-size: 12px;
   color: #ffffff;

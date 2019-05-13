@@ -23,6 +23,8 @@ $secondBoxHeight:calc(100vh - 365px);
 $secondInnerHeight:calc(100vh - 365px - 85px);
 $centerWidth:calc(100% - 745px);
 $centerContHeight:calc(100vh - 210px);
+$thumbHeight:calc( (100vh - 210px) / 4);
+$thumbnailHeight:calc( ( (100vh - 210px) / 4 ) - 30px); //아래방향 패딩 5px 추가
 @mixin iconFont {
   font-family:'ecurations';
 }
@@ -349,19 +351,23 @@ body {
           &--list,&--thumb,&--map {
             display:inline-block;
           }
+          &--map a {
+            font-size:17px;
+          }
           a {
             display:block;
-            width: 46px;
-            height: 46px;
+            width:44px;
+            height:44px;
             text-align:center;
-            line-height: 46px;
-            color: #5a5a5a;
+            line-height:46px;
+            color:#5a5a5a;
           }
           ul li.select a {
             color:#ffffff;
-            background: $secondaryColor;
+            background:$secondaryColor;
           }
         }
+        // 리스트 보기 방식
         th,td {
           padding:8px;
           color:$fontData;
@@ -379,6 +385,114 @@ body {
           &:hover td {
             background:$secondaryColor;
             color:$fontWhite;
+          }
+        }
+        // 썸네일 보기방식 
+        .itemlist>li {
+          float:left;
+          width:25%;
+          height:$thumbHeight;
+          padding-right:5px;
+          padding-bottom:5px;
+          &:nth-child(4n) {
+            padding-right:0;
+          }
+          &:nth-child(n+13) {
+            padding-bottom:0;
+          }
+          .item {
+            display:block;
+            width:100%;
+            height:100%;            
+            &__title {
+              width:100%;
+              height:25px;
+              padding:6px;
+              background:#000000;
+              font-size:11px;
+              color:#ffffff;
+              transition: all 0.5s;
+              &--name {
+                float:left;
+              }
+              &--event {
+                float:right;
+              }
+            }
+            &__image {
+              width:100%;
+              height:$thumbnailHeight;
+              border:3px solid #000000;
+              transition: all 0.5s;
+              img {
+                width:100%;
+                height:100%;
+              }
+            }
+            &:hover {
+              .item__title {
+                background: $secondaryColor;
+              }
+              .item__image {
+                border-color: $secondaryColor;
+              }
+            }
+          }
+          .importance2 {
+            .item__title {
+              width:100%;
+              height:25px;
+              padding:6px;
+              background:#fc913a;
+              font-size:11px;
+              color:#ffffff;
+              .item__title--name {
+                float:left;
+              }
+              .item__title--event {
+                float:right;
+              }
+            }
+            .item__image {
+              width:100%;
+              border:3px solid #fc913a;
+              img {
+                width:100%;
+                height:100%;
+              }
+            }
+          }
+          .importance3 {
+            .item__title {
+              width:100%;
+              height:25px;
+              padding:6px;
+              background:#f94e3f;
+              font-size:11px;
+              color:#ffffff;              
+              .item__title--name {
+                float:left;
+              }
+              .item__title--event {
+                float:right;
+              }
+            }
+            .item__image {
+              width:100%;
+              border:3px solid #f94e3f;
+              img {
+                width:100%;
+                height:100%;
+              }
+            }
+          }
+          .selected {
+            .item__title {
+              background: $secondaryColor;
+            }
+            .item__image {
+              border-color: $secondaryColor;
+            }
           }
         }
       }
@@ -458,6 +572,20 @@ body {
       overflow-x:auto;
       table {
         width:650px;
+      }
+    }
+  }
+  .article {
+    .datalist {
+      .itemlist>li {
+        .item {
+          &__title {
+            font-size:10px !important;
+            &--event {
+              display:none;              
+            }
+          }
+        }
       }
     }
   }

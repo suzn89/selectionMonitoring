@@ -4,15 +4,15 @@ $(function(){
     e.preventDefault();
     if (panelOpen) {
       $(this).addClass('open');
-      $('.left').stop(true,true).animate({'margin-left':'-270px'},500,function(){
-        panelOpen=false;
+      $('.left').stop(true,true).animate({'left':'-265px'},500,function(){        
         $('.center').addClass('leftnone_center');
+        panelOpen=false;
       });      
     } else {      
       $(this).removeClass('open');
-      $('.left').stop(true,true).animate({'margin-left':'0px'},500,function(){
+      $('.left').stop(true,true).animate({'left':'10px'},500,function(){        
+        $('.center').removeClass('leftnone_center');
         panelOpen=true;
-        $('.center').removeClass().addClass('center');
       });
     }
   });

@@ -21,15 +21,15 @@ $panelHeight:calc(100vh - 125px);
 // 세로 2번 박스 높이 계산용
 $secondBoxHeight:calc(100vh - 365px);
 $secondInnerHeight:calc(100vh - 365px - 85px);
-$centerWidth:calc(100% - 745px);
+$centerWidth:calc(100% - 765px);
 $centerContHeight:calc(100vh - 210px);
 $thumbHeight:calc( (100vh - 210px) / 4);
 $thumbnailHeight:calc( ( (100vh - 210px) / 4 ) - 30px); //아래방향 패딩 5px 추가
 
 // 패널 닫혔을때 센터 크기
-$leftClosedCenter: calc(100vw - 495px);
+$leftClosedCenter: calc(100vw - 490px);
 $rightClosedCenter: calc(100vw - 300px);
-$bothClosedCenter: calc(100vw - 30px);
+$bothClosedCenter: calc(100vw - 25px);
 @mixin iconFont {
   font-family:'ecurations';
 }
@@ -211,11 +211,14 @@ body {
     }
   }
   .left {
-    position:relative;
-    float:left;
+    position:absolute;
+    top: 115px;
+    left: 10px;
     width:275px;
     height:$panelHeight;
     padding-right:5px;
+    background: $bgColor;
+    z-index:300;    
     &__btn--close {
       position:absolute;
       right: -25px;
@@ -357,12 +360,14 @@ body {
     }    
   }  
   .center {
-    float:left;
+    position: absolute;
+    top: 115px;
+    left: 285px;
     width:$centerWidth;
     height:$panelHeight;
     padding-left:5px;
     padding-right:5px;
-    transition: width 0.5s;
+    transition: all 0.5s;
     .article {
       position:relative;;
       width:100%;
@@ -567,6 +572,9 @@ body {
     }
   }
   .leftnone_center {
+    position: absolute;
+    top: 115px;
+    left: 10px;
     width: $leftClosedCenter;
     transition:all 0.5s;
   }

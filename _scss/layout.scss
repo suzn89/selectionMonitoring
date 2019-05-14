@@ -593,6 +593,7 @@ body {
     width:470px;
     height:$panelHeight;
     padding-left:5px;
+    z-index:300;
     &__btn--close {
       position:absolute;
       left: -5px;

@@ -25,6 +25,11 @@ $centerWidth:calc(100% - 745px);
 $centerContHeight:calc(100vh - 210px);
 $thumbHeight:calc( (100vh - 210px) / 4);
 $thumbnailHeight:calc( ( (100vh - 210px) / 4 ) - 30px); //아래방향 패딩 5px 추가
+
+// 패널 닫혔을때 센터 크기
+$leftClosedCenter: calc(100vw - 495px);
+$rightClosedCenter: calc(100vw - 300px);
+$bothClosedCenter: calc(100vw - 30px);
 @mixin iconFont {
   font-family:'ecurations';
 }
@@ -51,6 +56,7 @@ $thumbnailHeight:calc( ( (100vh - 210px) / 4 ) - 30px); //아래방향 패딩 5p
 // 기본으로 작성되는 CSS는 1279px보다 큰 화면에서 작동 됩니다.
 body {
   background:$bgColor;
+  overflow-x:hidden;
 }
 #header {
   width:100%;
@@ -205,10 +211,40 @@ body {
     }
   }
   .left {
+    position:relative;
     float:left;
     width:275px;
     height:$panelHeight;
     padding-right:5px;
+    &__btn--close {
+      position:absolute;
+      right: -25px;
+      top:50%;
+      transform:translate(-50%, -50%);      
+      width: 20px;
+      height: 80px;   
+      line-height: 70px;   
+      padding: 5px;
+      color:$areaColor;
+      word-break: break-all;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background:-webkit-gradient(linear, 220% 20%, 20% 20%, from(#000000), to(#303030));
+      z-index: 300;
+      &:after {
+        @include iconFont();
+        content: '\e904';
+        color:#ffffff;
+        font-size: 11px;
+      }    
+    }
+    &__btn--close.open {
+      &:after {
+        @include iconFont();
+        content: '\e905';
+        font-size: 11px;
+      }
+    }
     &__live {
       overflow:hidden;
       background:$areaColor2;
@@ -318,14 +354,15 @@ body {
           }
         }
       }
-    }
-  }
+    }    
+  }  
   .center {
     float:left;
     width:$centerWidth;
     height:$panelHeight;
     padding-left:5px;
     padding-right:5px;
+    transition: width 0.5s;
     .article {
       position:relative;;
       width:100%;
@@ -529,11 +566,54 @@ body {
       }
     }
   }
+  .leftnone_center {
+    width: $leftClosedCenter;
+    transition:all 0.5s;
+  }
+  .rightnone_center {
+    width: $rightClosedCenter;
+    transition:all 0.5s;
+  }
+  .leftnone_center.rightnone_center {
+    width: $bothClosedCenter;
+    transition:all 0.5s;
+  }
   .right {
-    float:right;
+    position:absolute;
+    top: 115px;
+    right: 10px;
     width:470px;
     height:$panelHeight;
     padding-left:5px;
+    &__btn--close {
+      position:absolute;
+      left: -5px;
+      top:50%;
+      transform:translate(-50%, -50%);      
+      width: 20px;
+      height: 80px;   
+      line-height: 70px;   
+      padding: 5px;
+      color:$areaColor;
+      word-break: break-all;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background:-webkit-gradient(linear, 90% -200%, -200% -200%, from(#303030), to(#000000));
+      z-index: 300;
+      &:after {
+        @include iconFont();
+        content: '\e905';
+        color:#ffffff;
+        font-size: 11px;
+      }    
+    }
+    &__btn--close.open {
+      &:after {
+        @include iconFont();
+        content: '\e904';
+        font-size: 11px;
+      }
+    }
     .detail {
       overflow-y:auto;
       background:$areaColor;

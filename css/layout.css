@@ -1,5 +1,6 @@
 body {
   background: #282828;
+  overflow-x: hidden;
 }
 
 #header {
@@ -182,10 +183,42 @@ body {
 }
 
 #content .left {
+  position: relative;
   float: left;
   width: 275px;
   height: calc(100vh - 125px);
   padding-right: 5px;
+}
+
+#content .left__btn--close {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 80px;
+  line-height: 70px;
+  padding: 5px;
+  color: #303030;
+  word-break: break-all;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: -webkit-gradient(linear, 220% 20%, 20% 20%, from(#000000), to(#303030));
+  z-index: 300;
+}
+
+#content .left__btn--close:after {
+  font-family: 'ecurations';
+  content: '\e904';
+  color: #ffffff;
+  font-size: 11px;
+}
+
+#content .left__btn--close.open:after {
+  font-family: 'ecurations';
+  content: '\e905';
+  font-size: 11px;
 }
 
 #content .left__live {
@@ -328,6 +361,8 @@ body {
   height: calc(100vh - 125px);
   padding-left: 5px;
   padding-right: 5px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 #content .center .article {
@@ -558,11 +593,62 @@ body {
   z-index: 201;
 }
 
+#content .leftnone_center {
+  width: calc(100vw - 495px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#content .rightnone_center {
+  width: calc(100vw - 300px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#content .leftnone_center.rightnone_center {
+  width: calc(100vw - 30px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 #content .right {
-  float: right;
+  position: absolute;
+  top: 115px;
+  right: 10px;
   width: 470px;
   height: calc(100vh - 125px);
   padding-left: 5px;
+}
+
+#content .right__btn--close {
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 80px;
+  line-height: 70px;
+  padding: 5px;
+  color: #303030;
+  word-break: break-all;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: -webkit-gradient(linear, 90% -200%, -200% -200%, from(#303030), to(#000000));
+  z-index: 300;
+}
+
+#content .right__btn--close:after {
+  font-family: 'ecurations';
+  content: '\e905';
+  color: #ffffff;
+  font-size: 11px;
+}
+
+#content .right__btn--close.open:after {
+  font-family: 'ecurations';
+  content: '\e904';
+  font-size: 11px;
 }
 
 #content .right .detail {

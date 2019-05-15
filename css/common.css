@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^='icon-'], [class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'ecurations' !important;
   speak: none;
@@ -42,7 +42,7 @@
 ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
   width: 16px;
   height: 16px;
-  background: #2D2D2D;
+  background: #2d2d2d;
 }
 
 .input__txt {
@@ -50,6 +50,92 @@
   padding: 5px;
   background: #464646;
   color: #ffffff;
+}
+
+.inputarea {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.inputarea .label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.inputarea__select {
+  position: relative;
+  border: 1px solid #b0b1b3;
+}
+
+.inputarea__select:after {
+  position: absolute;
+  font-family: 'ecurations';
+  content: '\e905';
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #b0b1b3;
+  right: 15px;
+  top: 10px;
+  font-size: 10px;
+}
+
+.inputarea__calendar {
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  border: 1px solid #b0b1b3;
+}
+
+.inputarea__calendar .btn_cal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.inputarea__calendar .btn_cal:after {
+  font-family: 'ecurations';
+  content: '\e907';
+  color: #b0b1b3;
+}
+
+.inputarea__text {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border: 1px solid #b0b1b3;
+}
+
+.inputarea .from {
+  padding: 0 5px;
+  color: #b0b1b3;
+}
+
+.inputarea select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  padding: 8px 10px;
+  border: 0;
+  background: #303030;
+  color: #b0b1b3;
+  z-index: 200;
+}
+
+.inputarea select::-ms-expand {
+  display: none;
+  /*IE10*/
+}
+
+.inputarea input[type='text'] {
+  padding: 7px 10px;
+  background: none;
+  color: #b0b1b3;
 }
 
 .btn__right {
@@ -75,8 +161,115 @@
 }
 
 .btn__small--save:hover {
-  background: #249F87;
+  background: #249f87;
   color: #ffffff;
+}
+
+.btnarea {
+  display: block;
+  width: 100%;
+}
+
+.btnarea a[class^='btn__'] {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btnarea .btn__check {
+  width: 120px;
+  height: 25px;
+  line-height: 24px;
+  color: #249f87;
+  border: 1px solid #249f87;
+  font-size: 11px;
+}
+
+.btnarea .btn__check i {
+  margin-top: 1px;
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+.btnarea .btn__check:hover {
+  background: #249f87;
+  color: #ffffff;
+}
+
+.btnarea .btn__big--orange {
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+  background: #f08933;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 45px;
+}
+
+.btnarea .btn__big--orange:hover {
+  background: #f57637;
+}
+
+.btnarea__right {
+  text-align: right;
+}
+
+.input {
+  display: inline-block;
+  position: relative;
+  height: 15px;
+}
+
+.input input[type='checkbox'], .input input[type='radio'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  -webkit-appearance: none;
+  clip: rect(0, 0, 0, 0);
+}
+
+.input input[type='checkbox'] + label {
+  display: inline-block;
+  height: 15px;
+  line-height: 24px;
+  padding: 0 0 0 15px;
+  font-size: 11px;
+  background: url(../images/inp_checkbox.png) no-repeat left center;
+  cursor: pointer;
+}
+
+.input input[type='checkbox'] + label.ir {
+  font-size: 0px;
+  text-indent: -9999em;
+}
+
+.input input[type='checkbox']:checked + label {
+  background: url(../images/inp_checkbox_on.png) no-repeat left center;
+}
+
+.input input[type='checkbox']:disabled + label {
+  background: url(../images/inp_checkbox_disable.png) no-repeat left center;
+}
+
+.input input[type='radio'] + label {
+  display: inline-block;
+  height: 22px;
+  line-height: 21px;
+  padding: 0 0 0 25px;
+  font-size: 14px;
+  background: url(../images/inp_radiobox.png) no-repeat left center;
+  cursor: pointer;
+}
+
+.input input[type='radio']:checked + label {
+  background: url(../images/inp_radiobox_on.png) no-repeat left center;
+}
+
+.input input[type='radio']:disabled + label {
+  background: url(../images/inp_radiobox_disable.png) no-repeat left center;
 }
 
 .input__select--small {
@@ -137,7 +330,7 @@
   width: 15px;
   height: 15px;
   line-height: 15px;
-  color: #8B8B8B;
+  color: #8b8b8b;
   font-size: 12px;
 }
 
@@ -165,5 +358,70 @@
 
 .txc {
   text-align: center !important;
+}
+
+.ir {
+  font-size: 0;
+  text-indent: -9999em;
+}
+
+.mt5 {
+  margin-top: 5px !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mt25 {
+  margin-top: 25px !important;
+}
+
+.mt30 {
+  margin-top: 30px !important;
+}
+
+.mt40 {
+  margin-top: 40px !important;
+}
+
+.mt50 {
+  margin-top: 50px !important;
+}
+
+.mt80 {
+  margin-top: 80px !important;
+}
+
+.mt70 {
+  margin-top: 70px !important;
+}
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.mt60 {
+  margin-top: 60px !important;
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.mr0 {
+  margin-right: 0px !important;
+}
+
+.ml0 {
+  margin-left: 0px !important;
+}
+
+.ml5 {
+  margin-left: 5px !important;
+}
+
+.ml10 {
+  margin-left: 10px !important;
 }
 /*# sourceMappingURL=common.css.map */

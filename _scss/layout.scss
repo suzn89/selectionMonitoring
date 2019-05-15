@@ -57,6 +57,7 @@ $bothClosedCenter: calc(100vw - 25px);
 body {
   background:$bgColor;
   overflow-x:hidden;
+  height: 100vh;
 }
 #header {
   width:100%;
@@ -183,7 +184,7 @@ body {
   }
 }
 #content {
-  padding:10px;
+  padding:10px;  
   .boxmodel {
     padding:10px;
     h3 {
@@ -232,7 +233,7 @@ body {
       word-break: break-all;
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;
-      background:-webkit-gradient(linear, 220% 20%, 20% 20%, from(#000000), to(#303030));
+      background:$primaryColor;
       z-index: 300;
       &:after {
         @include iconFont();
@@ -357,7 +358,11 @@ body {
           }
         }
       }
-    }    
+    }
+    &__search {
+      height: 100%;
+      background: $areaColor;
+    }
   }  
   .center {
     position: absolute;
@@ -569,6 +574,31 @@ body {
           }                
         }
       }
+      .pageinfo {
+        float:left;
+        margin-left: 20px;
+        color: $fontData;
+        line-height: 25px;
+        &__all {
+          display: inline-block;          
+          padding-right: 5px;          
+          &:after {
+            padding-left: 7px;
+            content: '|';                        
+          }
+          &--orange {
+            color: $primaryColor;
+          }
+        }
+        &__page {
+          &--orange {
+            color: $primaryColor;
+          }
+        }
+      }
+      .topbtn {
+        float:right;
+      }
     }
   }
   .leftnone_center {
@@ -607,7 +637,7 @@ body {
       word-break: break-all;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
-      background:-webkit-gradient(linear, 90% -200%, -200% -200%, from(#303030), to(#000000));
+      background:$secondaryColor;
       z-index: 300;
       &:after {
         @include iconFont();

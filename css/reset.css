@@ -41,7 +41,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 *:-ms-input-placeholder {color:#cacaca}
 
 /* blind */
-.blind {clip:rect(0,0,0,0);overflow:hidden;display:block;width:1px;height:1px;margin:-1px;padding:0;border:0;font-size:1px;line-height:0}
+.blind {clip:rect(0,0,0,0);overflow:hidden;display:block;width:0px;height:0px;margin:-1px;padding:0;border:0;font-size:1px;line-height:0}
 
 /* skip */
 .skip{display:block;position:absolute;left:0;top:-100px}

@@ -185,10 +185,10 @@ body {
 
 #content .left {
   position: absolute;
-  top: 115px;
+  top: 60px;
   left: 10px;
   width: 275px;
-  height: calc(100vh - 125px);
+  height: calc(100vh - 75px);
   padding-right: 5px;
   background: #282828;
   z-index: 300;
@@ -264,12 +264,12 @@ body {
 
 #content .left__status {
   overflow: hidden;
-  height: calc(100vh - 365px);
+  height: calc(100vh - 315px);
   background: #313131;
 }
 
 #content .left__status .status_wrap {
-  height: calc(100vh - 365px - 85px);
+  height: calc(100vh - 315px - 85px);
   overflow-y: auto;
 }
 
@@ -366,10 +366,10 @@ body {
 
 #content .center {
   position: absolute;
-  top: 115px;
+  top: 60px;
   left: 285px;
   width: calc(100% - 765px);
-  height: calc(100vh - 125px);
+  height: calc(100vh - 75px);
   padding-left: 5px;
   padding-right: 5px;
   -webkit-transition: all 0.5s;
@@ -633,11 +633,23 @@ body {
   float: right;
 }
 
+#content .center.row2 {
+  width: calc(100vw - 290px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 #content .leftnone_center {
   position: absolute;
-  top: 115px;
+  top: 60px;
   left: 10px;
   width: calc(100vw - 490px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#content .center.row2.leftnone_center {
+  width: calc(100vw - 15px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -656,10 +668,10 @@ body {
 
 #content .right {
   position: absolute;
-  top: 115px;
+  top: 60px;
   right: 10px;
   width: 470px;
-  height: calc(100vh - 125px);
+  height: calc(100vh - 75px);
   padding-left: 5px;
   z-index: 300;
 }
@@ -783,6 +795,86 @@ body {
 #content .right .detail .datalist th {
   background: #232323;
   color: #ffffff;
+}
+
+#content .manager {
+  width: calc(100vw - 20px);
+}
+
+#content .manager .search {
+  width: 100%;
+}
+
+#content .manager .search .boxmodel {
+  overflow: hidden;
+  background: #303030;
+}
+
+#content .manager .search .boxmodel h3 {
+  float: left;
+  padding-right: 80px;
+}
+
+#content .manager .search__options .inputarea {
+  float: left;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#content .manager .search__options .inputarea .label {
+  margin-right: 10px;
+  margin-bottom: 0;
+  line-height: 35px;
+  color: #dedede;
+}
+
+#content .manager .search__options .inputarea__select, #content .manager .search__options .inputarea__calendar, #content .manager .search__options .inputarea__text {
+  float: left;
+  width: 170px;
+}
+
+#content .manager .search__options .inputarea + .inputarea {
+  margin-left: 30px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #505050;
+  background: #333333;
+  z-index: 999;
+}
+
+.modal__top {
+  position: relative;
+  padding: 10px;
+  background: #232323;
+}
+
+.modal__top h3 {
+  padding-left: 20px;
+  background: url(../images/bullet.png) left 50% no-repeat;
+  color: #999999;
+}
+
+.modal__top .close {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  color: #999999;
+}
+
+.modal__top .close:hover {
+  color: #B4B4B4;
+}
+
+.modal__contents {
+  padding: 15px 10px;
 }
 
 @media (max-width: 1279px) {

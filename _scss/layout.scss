@@ -15,12 +15,13 @@ $fontData:#8b8b8b;
 //인풋
 $selectColor:#b0b1b3;
 $selectDisable:#575757;
+
 $contHeight:calc(100vh - 60px);
-$panelHeight:calc(100vh - 125px);
+$panelHeight:calc(100vh - 75px);
 
 // 세로 2번 박스 높이 계산용
-$secondBoxHeight:calc(100vh - 365px);
-$secondInnerHeight:calc(100vh - 365px - 85px);
+$secondBoxHeight:calc(100vh - 315px);
+$secondInnerHeight:calc(100vh - 315px - 85px);
 $centerWidth:calc(100% - 765px);
 $centerContHeight:calc(100vh - 210px);
 $thumbHeight:calc( (100vh - 210px) / 4);
@@ -213,7 +214,7 @@ body {
   }
   .left {
     position:absolute;
-    top: 115px;
+    top: 60px;
     left: 10px;
     width:275px;
     height:$panelHeight;
@@ -366,7 +367,7 @@ body {
   }  
   .center {
     position: absolute;
-    top: 115px;
+    top: 60px;
     left: 285px;
     width:$centerWidth;
     height:$panelHeight;
@@ -600,13 +601,21 @@ body {
         float:right;
       }
     }
+  } // center
+  .center.row2 {  //2단일때
+    width: calc(100vw - 290px);
+    transition:all 0.5s;
   }
   .leftnone_center {
     position: absolute;
-    top: 115px;
+    top: 60px;
     left: 10px;
     width: $leftClosedCenter;
     transition:all 0.5s;
+  }
+  .center.row2.leftnone_center {
+    width: calc(100vw - 15px);
+    transition: all 0.5s;
   }
   .rightnone_center {
     width: $rightClosedCenter;
@@ -618,7 +627,7 @@ body {
   }
   .right {
     position:absolute;
-    top: 115px;
+    top: 60px;
     right: 10px;
     width:470px;
     height:$panelHeight;
@@ -738,6 +747,81 @@ body {
     }
   }
 }
+#content .manager {
+  width: calc(100vw - 20px);
+  .search {
+    width: 100%;
+    .boxmodel {
+      overflow: hidden;
+      background: $areaColor;
+      h3 {
+        float:left;
+        padding-right: 80px;        
+      }
+    }     
+    &__options {
+      .inputarea {        
+        float:left;
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        .from {
+
+        }
+        .label {          
+          margin-right: 10px;
+          margin-bottom: 0;
+          line-height: 35px;
+          color: #dedede;
+        }
+        &__select,
+        &__calendar,
+        &__text {
+          float:left;
+          width: 170px; 
+        }
+      }
+      .inputarea + .inputarea {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+// 모달팝업관련
+.modal {
+  display:none;
+  position:absolute;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  border: 1px solid #505050;
+  background: #333333;
+  z-index: 999;
+  &__top {
+    position: relative;
+    padding: 10px;
+    background: $headBackground;
+    h3 {
+      padding-left: 20px;
+      background: url(../images/bullet.png) left 50% no-repeat;
+      color: #999999;
+    }
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      color:#999999;
+      &:hover {
+        color: #B4B4B4;
+      }
+    }
+  }
+  &__contents {
+    padding: 15px 10px;
+  }
+}
+
+
 // 데스크탑 (가로 해상도가 1280px 보다 작은 화면에 적용)
 @media (max-width: 1279px) {
   body {

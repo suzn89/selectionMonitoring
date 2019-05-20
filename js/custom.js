@@ -33,4 +33,13 @@ $(function(){
       });
     }
   });
+
+  // 모달팝업 관련
+  $('.openmodal').on('click', function () {
+    $('.modal').show();
+  });
+  $('.modal__top > .close').on('click', function () {
+    $('.modal').hide();
+  });
+
 });

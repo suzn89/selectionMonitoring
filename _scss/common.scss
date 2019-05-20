@@ -81,7 +81,7 @@ $selectDisable:#575757;
     display:block;
     margin-bottom: 5px;
     color: $fontWhite;    
-  }
+  }  
   &__select {
     position: relative;
     border:1px solid $selectColor;
@@ -141,11 +141,105 @@ $selectDisable:#575757;
     }
   }
   input[type='text'] {
+    width: 100%;
     padding: 7px 10px;
     background: none;
     color: $selectColor;
   }
 }
+
+.modal__contents {  
+  .left {
+    float:left;
+  }
+  .right {
+    float:right;
+    margin-left: 30px;
+  }
+  .inputarea {
+    width: 300px;
+    height: 80px;
+    margin-top: 0;
+    em {
+      font-size: 11px;      
+    }
+    .label {
+      color: #959595;            
+    }
+    &__text {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      border: 0;
+      background: #404040;
+      .icon-check {
+        position: absolute;
+        right: 10px;
+        top:10px;
+      }
+      .icon-check.good {
+        color: #1F9F57;
+      }
+      .icon-warning {
+        position: absolute;
+        right: 10px;
+        top:10px;
+      }
+      .icon-warning.wrong {
+        color: #E84B4B;
+      }
+    }
+    &__text input[type='text'].disable {
+      background: #2A2A2A;
+      color: #848484;
+    }
+    &__text input[type='text'].check {
+      width: 80%;
+      float:left;
+    }
+    &__text input[type='text'].check + a {
+      float:right;
+      width: 20%;
+      height: 33px;
+      text-align: center;
+      line-height: 33px;
+      background: #5A5A5A;
+      color: #ffffff;
+      font-size: 11px;
+      &:hover{
+        background: #535353;
+      }
+    }
+    input[type='text'],
+    input[type='password'] {
+      &:focus {
+        background: #4d4d4d;
+      }
+    }
+    &__select {
+      border: 0;
+      select {
+        padding: 7px 10px;
+        background: #404040;
+      }
+    }
+    input[type='text'] {
+      width: 100%;
+    }
+    input[type='password'] {
+      width: 100%;
+      padding: 7px 10px;
+      background: none;
+      color: $selectColor;
+    }
+    label {
+      margin-right: 20px;
+      color: #959595;
+    }
+  }
+}
+
+
 // 버튼스타일
 .btn__right {
   width:100%;
@@ -170,6 +264,7 @@ $selectDisable:#575757;
   }
 }
 .btnarea {
+  clear: both;
   display:block;
   width:100%;
   a[class^='btn__'] {
@@ -178,10 +273,35 @@ $selectDisable:#575757;
     border-radius:4px;
     transition:all 0.3s;
   }
+  a[class^='btn__'] + a[class^='btn__'] {
+    margin-left: 10px;
+  }
   .btn__ {
+    &submit {      
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      color: #ffffff;
+      font-size: 14px;
+      background: $primaryColor;
+      &:hover {
+        background: $primaryHover;
+      }
+    }
+    &cancle {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      color: #ffffff;
+      font-size: 14px;
+      background: #5a5a5a;
+      &:hover {
+        background: #535353;
+      }
+    }
     &check {
-      width:120px;
       height:25px;
+      padding: 0 10px;
       line-height:24px;
       color:$secondaryColor;
       border:1px solid $secondaryColor;
@@ -208,10 +328,26 @@ $selectDisable:#575757;
         background: $primaryHover;
       }
     }
+    &search--orange {      
+      width: 150px;
+      height: 35px;
+      background: $primaryColor;
+      line-height: 35px;
+      color: $fontWhite;
+      &:hover {
+        background: $primaryHover;
+      }
+    }
   }
 }
-.btnarea__right {
+.btnarea__right {  
   text-align:right;
+}
+.btnarea__left {
+  text-align:left;
+}
+.btnarea__center {
+  text-align:center;
 }
 
 

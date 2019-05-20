@@ -133,9 +133,116 @@
 }
 
 .inputarea input[type='text'] {
+  width: 100%;
   padding: 7px 10px;
   background: none;
   color: #b0b1b3;
+}
+
+.modal__contents .left {
+  float: left;
+}
+
+.modal__contents .right {
+  float: right;
+  margin-left: 30px;
+}
+
+.modal__contents .inputarea {
+  width: 300px;
+  height: 80px;
+  margin-top: 0;
+}
+
+.modal__contents .inputarea em {
+  font-size: 11px;
+}
+
+.modal__contents .inputarea .label {
+  color: #959595;
+}
+
+.modal__contents .inputarea__text {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border: 0;
+  background: #404040;
+}
+
+.modal__contents .inputarea__text .icon-check {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.modal__contents .inputarea__text .icon-check.good {
+  color: #1F9F57;
+}
+
+.modal__contents .inputarea__text .icon-warning {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.modal__contents .inputarea__text .icon-warning.wrong {
+  color: #E84B4B;
+}
+
+.modal__contents .inputarea__text input[type='text'].disable {
+  background: #2A2A2A;
+  color: #848484;
+}
+
+.modal__contents .inputarea__text input[type='text'].check {
+  width: 80%;
+  float: left;
+}
+
+.modal__contents .inputarea__text input[type='text'].check + a {
+  float: right;
+  width: 20%;
+  height: 33px;
+  text-align: center;
+  line-height: 33px;
+  background: #5A5A5A;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.modal__contents .inputarea__text input[type='text'].check + a:hover {
+  background: #535353;
+}
+
+.modal__contents .inputarea input[type='text']:focus,
+.modal__contents .inputarea input[type='password']:focus {
+  background: #4d4d4d;
+}
+
+.modal__contents .inputarea__select {
+  border: 0;
+}
+
+.modal__contents .inputarea__select select {
+  padding: 7px 10px;
+  background: #404040;
+}
+
+.modal__contents .inputarea input[type='text'] {
+  width: 100%;
+}
+
+.modal__contents .inputarea input[type='password'] {
+  width: 100%;
+  padding: 7px 10px;
+  background: none;
+  color: #b0b1b3;
+}
+
+.modal__contents .inputarea label {
+  margin-right: 20px;
+  color: #959595;
 }
 
 .btn__right {
@@ -166,6 +273,7 @@
 }
 
 .btnarea {
+  clear: both;
   display: block;
   width: 100%;
 }
@@ -178,9 +286,39 @@
   transition: all 0.3s;
 }
 
+.btnarea a[class^='btn__'] + a[class^='btn__'] {
+  margin-left: 10px;
+}
+
+.btnarea .btn__submit {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #f08933;
+}
+
+.btnarea .btn__submit:hover {
+  background: #f57637;
+}
+
+.btnarea .btn__cancle {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #5a5a5a;
+}
+
+.btnarea .btn__cancle:hover {
+  background: #535353;
+}
+
 .btnarea .btn__check {
-  width: 120px;
   height: 25px;
+  padding: 0 10px;
   line-height: 24px;
   color: #249f87;
   border: 1px solid #249f87;
@@ -212,8 +350,28 @@
   background: #f57637;
 }
 
+.btnarea .btn__search--orange {
+  width: 150px;
+  height: 35px;
+  background: #f08933;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.btnarea .btn__search--orange:hover {
+  background: #f57637;
+}
+
 .btnarea__right {
   text-align: right;
+}
+
+.btnarea__left {
+  text-align: left;
+}
+
+.btnarea__center {
+  text-align: center;
 }
 
 .input {

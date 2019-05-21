@@ -765,9 +765,6 @@ body {
         width: auto;
         margin-top: 0;
         margin-bottom: 10px;
-        .from {
-
-        }
         .label {          
           margin-right: 10px;
           margin-bottom: 0;
@@ -793,7 +790,10 @@ body {
   position:absolute;
   left: 50%;
   top:50%;
-  transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);  
+  max-height: 90vh;
+  width: 652px;
+  overflow-y:auto;
   border: 1px solid #505050;
   background: #333333;
   z-index: 999;
@@ -821,6 +821,95 @@ body {
   }
 }
 
+// 설정화면관련
+#settings {
+  .menu {
+    float:left;
+    width: 200px;
+    height: calc(100vh - 45px);
+    background: #333333;
+    ul > li a {
+      display: block;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      color:#b7b7b7;
+      text-align: center;
+      &.on {
+        color: $primaryColor;
+        background: #282828;
+      }
+      &:hover {
+        color: #ffffff;
+        background: #282828;
+      }
+    }
+  }
+  .option {    
+    float: left;
+    padding: 30px 50px;    
+    h3 {
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #5a5a5a;
+      color: #B7B7B7;
+      font-size: 17px;
+    }
+    .pageinfo {
+      float:left;
+      font-size: 13px;      
+      color: $fontData;
+      line-height: 25px;
+      &__all {
+        display: inline-block;          
+        padding-right: 5px;          
+        &:after {
+          padding-left: 7px;
+          content: '|';                        
+        }
+        &--orange {
+          color: $primaryColor;
+        }
+      }
+      &__page {
+        &--orange {
+          color: $primaryColor;
+        }
+      }
+    }
+    .topbtn {
+      float:right;
+      margin-bottom: 5px;
+    }
+    .datalist {
+      position:relative;
+      clear:both;
+      width:100%;
+      overflow-y:auto;
+      background:$areaColor;
+      table {
+        width:100%;
+      }
+      th,td {
+        padding:8px;
+        color:$fontData;
+        font-weight:normal;
+        font-size:14px;
+        color:$fontWhite;
+        text-align:center;
+        word-break:keep-all;
+        border-bottom:1px solid #414141;
+      }
+      th {
+        background:$headBackground;
+        color:$fontWhite;
+      }
+      td {
+        color: #989898;
+      }
+    }
+  }
+}
 
 // 데스크탑 (가로 해상도가 1280px 보다 작은 화면에 적용)
 @media (max-width: 1279px) {

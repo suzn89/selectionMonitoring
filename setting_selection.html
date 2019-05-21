@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='user-scalable=yes, width=1920, target-densitydpi=medium-dpi' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>e-Curations</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+<body>
+  <div id="top" class="top">
+    <div class="top__title">
+      <h2>시스템설정</h2>
+    </div>
+    <div class="top__user">
+      <p class="message"><span class="name">슈퍼관리자</span>님 로그인중입니다.</p>
+      <a href="#" class="btn__logout">로그아웃</a>
+    </div>
+  </div>
+  <div id="settings">
+    <div class="menu">
+      <ul>
+        <li><a href="#">알고리즘 옵션</a></li>
+        <li><a href="#">알람 옵션</a></li>
+        <li><a href="#">분석서버 관리</a></li>
+        <li><a href="#" class="on">선별서버 관리</a></li>
+        <li><a href="#">VMS 정보관리</a></li>
+      </ul>
+    </div><!-- // menu -->
+    <div class="option">
+      <h3>선별서버 관리</h3>
+        <div class="pageinfo">
+          <div class="pageinfo__all">전체 <span class="pageinfo__all--orange">2</span>건</div>
+          <span class="pageinfo__page"><span class="pageinfo__page--orange">1</span>/1 Page</span>
+        </div>
+        <div class="topbtn">
+          <div class="btnarea btnarea__right">
+            <a href="#" class="btn__normal">삭제</a>
+            <a href="#" class="btn__primary openmodal2">신규</a>
+          </div>
+        </div>
+        <div class="datalist">
+          <table>
+            <colgroup>
+              <col style="width:30px;">
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>             
+            </colgroup>
+            <thead>
+              <tr>
+                <th><span class="input"><input type="checkbox" name="" id="checkbox" class="input__checkbox"><label for="checkbox" class="ir">전체선택</label></span></th>
+                <th>VMS</th>
+                <th>Name</th>
+                <th>IP-address</th>
+                <th>port</th>
+                <th>Max-connection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="input"><input type="checkbox" name="" id="checkbox2" class="input__checkbox"><label for="checkbox2" class="ir">전체선택</label></div></td>
+                <td>Ai-1</td>
+                <td>ai-box1</td>
+                <td>192.168.101.2</td>
+                <td>8081</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><div class="input"><input type="checkbox" name="" id="checkbox2" class="input__checkbox" checked><label for="checkbox2" class="ir">전체선택</label></div></td>
+                <td>Ai-1</td>
+                <td>ai-box1</td>
+                <td>192.168.101.2</td>
+                <td>8081</td>
+                <td>100</td>
+              </tr>           
+            </tbody>
+          </table> 
+        </div> <!-- // datalist  -->  
+        <div class="pagenation">
+          <ul>
+            <li><a href="#" class="pagenation__btn"><i class="icon-leftarrow"></i><span class="blind">이전</span></a></li>
+            <li><a href="#" class="pagenation__btn--current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#" class="pagenation__btn--next"><i class="icon-rightarrow"></i><span class="blind">다음</span></a></li>         
+          </ul>
+        </div>      
+         
+    </div>
+  </div> <!-- // settings -->
+ <!-- 레이어팝업 시작 -->
+ <div class="modal size2">
+  <div class="modal__top">
+    <h3>선별서버 등록</h3>
+    <a href="#" class="close"><i class="icon-close"></i></a>
+  </div>
+  <div class="modal__contents">
+    <div class="left"> <!-- 인풋 왼쪽-->
+      <div class="inputarea">
+        <span class="label">
+          서버ID
+        </span>
+        <div class="inputarea__text">
+          <input type="text" title="아이디입력" name="" id="" class="ipt_text">          
+        </div>
+      </div> <!-- // inputarea 끝--> 
+      <div class="inputarea">
+        <span class="label">
+          Name
+        </span>
+        <div class="inputarea__text">
+          <input type="text" title="이름입력" name="" id="" class="ipt_text">
+        </div>
+      </div> <!-- // inputarea 끝--> 
+      <div class="inputarea">
+        <span class="label">
+          IP
+        </span>
+        <div class="inputarea__text">
+          <input type="text" title="이름입력" name="" id="" class="ipt_text">
+       </div>
+      </div> <!-- // inputarea 끝--> 
+      <div class="inputarea">
+        <span class="label">
+          PORT
+        </span>
+        <div class="inputarea__text">
+          <input type="text" title="이름입력" name="" id="" class="ipt_text">
+       </div>          
+      </div> <!-- // inputarea 끝--> 
+    </div>
+    
+    <div class="btnarea btnarea__center">
+      <a href="#" class="btn__submit">등록</a>
+      <a href="#" class="btn__cancle">닫기</a>
+    </div>
+  </div>
+</div>
+<!-- 레이어팝업 끝 -->
+</body>
+</html>

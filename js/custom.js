@@ -34,11 +34,19 @@ $(function(){
     }
   });
 
-  // 모달팝업 관련
+  // 모달팝업 관련 (가로2단)
   $('.openmodal').on('click', function () {
     $('.modal').show();
   });
-  $('.modal__top > .close').on('click', function () {
+  $('.close').on('click', function () {
+    $('.modal').hide();
+  });
+
+  // 모달팝업 관련 (가로좁은것)
+  $('.openmodal2').on('click', function () {
+    $('.modal').show();
+  });
+  $('.close').on('click', function () {
     $('.modal').hide();
   });
 

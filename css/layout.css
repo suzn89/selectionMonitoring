@@ -466,7 +466,8 @@ body {
 #content .center .article .datalist .itemlist > li .item {
   display: block;
   width: 100%;
-  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 #content .center .article .datalist .itemlist > li .item__title {
@@ -489,24 +490,38 @@ body {
 }
 
 #content .center .article .datalist .itemlist > li .item__image {
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  height: calc( ( (100vh - 210px) / 4 ) - 30px);
+  height: calc( ( (100vh - 210px) / 4 ) - 32px);
   border: 3px solid #000000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 #content .center .article .datalist .itemlist > li .item__image img {
   width: 100%;
   height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-#content .center .article .datalist .itemlist > li .item:hover .item__title {
-  background: #249f87;
+#content .center .article .datalist .itemlist > li .item:hover .item__image:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  content: '';
+  z-index: 400;
+  -webkit-box-shadow: inset 0px 1px 10px #000000;
+  box-shadow: inset 0px 1px 10px #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-#content .center .article .datalist .itemlist > li .item:hover .item__image {
-  border-color: #249f87;
+#content .center .article .datalist .itemlist > li .item:hover .item__image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #content .center .article .datalist .itemlist > li .importance2 .item__title {
@@ -720,6 +735,14 @@ body {
   margin-bottom: 10px;
   color: #989898;
   font-size: 18px;
+}
+
+#content .right .detail .stars {
+  float: right;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  color: #f08933;
 }
 
 #content .right .detail .tinytable {

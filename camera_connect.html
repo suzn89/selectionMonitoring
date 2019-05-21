@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='user-scalable=yes, width=1920, target-densitydpi=medium-dpi' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>e-Curations</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+<body>
+  <div id="top" class="top">
+    <div class="top__title">
+      <h2>카메라 연결 관리</h2>
+    </div>
+    <div class="top__user">
+      <p class="message"><span class="name">슈퍼관리자</span>님 로그인중입니다.</p>
+      <a href="#" class="btn__logout">로그아웃</a>
+    </div>
+  </div>
+<div id="content">
+    <div class="left">
+      <div class="left__search boxmodel">
+        <h3>카메라 조회</h3>
+        <div class="inputarea">
+          <span class="label">
+            선별서버
+          </span>
+          <div class="inputarea__select">
+            <select name="" id="" title="해당항목선택">
+              <option value="">전체</option>
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>  
+        </div> <!-- // inputarea 끝-->
+        <div class="inputarea">
+          <span class="label">
+            서버 등록 상태
+          </span>
+          <div class="inputarea__select">
+            <select name="" id="" title="해당항목선택">
+              <option value="">등록</option>
+              <option value="">미등록</option>
+            </select>
+          </div>  
+        </div> <!-- // inputarea 끝-->
+        <div class="inputarea">
+          <span class="label">
+            서버 등록 상태
+          </span>
+          <div class="inputarea__select">
+            <select name="" id="" title="해당항목선택">
+              <option value="">등록</option>
+              <option value="">미등록</option>
+            </select>
+          </div>  
+        </div> <!-- // inputarea 끝-->
+        
+        <div class="btnarea">
+          <a href="#" class="btn__big--orange">조회</a>
+        </div>
+      </div>
+      <a href="#" class="left__btn--close"><span class="blind">패널조작버튼</span></a> <!-- 패널 조작버튼 추가 -->
+    </div> <!-- // left -->
+
+    <div class="center row2">
+      <div class="article">
+        <h3>카메라 연결 관리</h3>
+        <div class="pageinfo">
+          <div class="pageinfo__all">전체 <span class="pageinfo__all--orange">60</span>건</div>
+          <span class="pageinfo__page"><span class="pageinfo__page--orange">1</span>/3 Page</span>
+        </div>
+        <div class="topbtn">
+          <div class="btnarea btnarea__right">
+            <a href="#" class="btn__check openmodal">신규등록</a>
+            <!-- openmodal 클릭시 레이어팝업 노출 -->
+          </div>
+        </div>
+        <div class="datalist">
+
+        </div> <!-- // datalist  -->  
+        <div class="pagenation">
+          <ul>
+            <li><a href="#" class="pagenation__btn"><i class="icon-leftarrow"></i><span class="blind">이전</span></a></li>
+            <li><a href="#" class="pagenation__btn--current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#" class="pagenation__btn--next"><i class="icon-rightarrow"></i><span class="blind">다음</span></a></li>         
+          </ul>
+        </div>      
+      </div>     
+    </div> <!-- // center -->
+  </div> <!-- // content -->
+  <!-- 레이어팝업 시작 -->
+  <div class="modal">
+    <div class="modal__top">
+      <h3>사용자등록</h3>
+      <a href="#" class="close"><i class="icon-close"></i></a>
+    </div>
+    <div class="modal__contents">
+      <div class="left"> <!-- 인풋 왼쪽-->
+        <div class="inputarea">
+          <span class="label">
+            아이디
+          </span>
+          <div class="inputarea__text">
+            <input type="text" title="아이디입력" name="" id="" class="ipt_text check">
+            <a href="#">중복체크</a>
+          </div>
+        </div> <!-- // inputarea 끝--> 
+
+        <!-- disabled 처리, 수정화면에서 사용-->
+        <div class="inputarea">
+          <span class="label">
+            아이디
+          </span>
+          <div class="inputarea__text">
+            <input type="text" title="아이디입력" name="" id="" value="admin" class="ipt_text disable" disabled> <!-- 클래스에 check를 삭제하고 disable 추가-->
+          </div>
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <span class="label">
+            이용자이름
+          </span>
+          <div class="inputarea__text">
+            <input type="text" title="이름입력" name="" id="" class="ipt_text">
+          </div>
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <span class="label">
+            비밀번호
+          </span>
+          <div class="inputarea__text">
+            <input type="password" title="이름입력" name="" id="" class="ipt_text">
+            <i class="icon-check"></i>
+            <!-- 제대로 입력했을때 .good 추가 
+            <i class="icon-check good"></i> -->
+         </div>
+          <em>* 6~16자의 영문 대소문자,숫자,특수문자를 조합하여 사용</em>
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <span class="label">
+            비밀번호 확인
+          </span>
+          <div class="inputarea__text">
+            <input type="password" title="이름입력" name="" id="" class="ipt_text">
+            <i class="icon-warning"></i>
+            <!-- 다르게 입력했을때 .wrong 추가
+            <i class="icon-warning wrong"></i>   -->
+         </div>          
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <span class="label">
+            전화번호
+          </span>
+          <div class="inputarea__text">
+            <input type="password" title="이름입력" name="" id="" class="ipt_text">
+         </div>          
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <span class="label">
+            휴대폰번호
+          </span>
+          <div class="inputarea__text">
+            <input type="password" title="이름입력" name="" id="" class="ipt_text">
+         </div>          
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <span class="label">
+            이메일
+          </span>
+          <div class="inputarea__text">
+            <input type="password" title="이름입력" name="" id="" class="ipt_text">
+         </div>          
+        </div> <!-- // inputarea 끝--> 
+      </div>
+      <div class="right">  <!-- 인풋 오른쪽-->
+        <div class="inputarea">
+          <span class="label">
+            회사명
+          </span>
+          <div class="inputarea__text">
+            <input type="text" title="이름입력" name="" id="" class="ipt_text">
+          </div>
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <span class="label">
+            회사주소
+          </span>
+          <div class="inputarea__text">
+            <input type="text" title="이름입력" name="" id="" class="ipt_text">
+          </div>
+        </div> <!-- // inputarea 끝-->
+        <div class="inputarea">
+          <span class="label">
+            계정 사용 여부
+          </span>
+          <div class="input">
+            <input type="radio" name="radio1" id="radio1" checked>
+            <label for="radio1">사용</label>
+            <input type="radio" name="radio1" id="radio2">
+            <label for="radio2">미사용</label>
+          </div>
+        </div> <!-- // inputarea 끝-->
+        <div class="inputarea">
+          <span class="label">
+            사용자전환
+          </span>
+          <div class="inputarea__select">
+            <select name="" id="" title="해당항목선택">
+              <option value="">선택항목 1</option>
+              <option value="">선택항목 2</option>
+              <option value="">선택항목 3</option>
+            </select>   
+          </div>
+        </div> <!-- // inputarea 끝--> 
+
+      </div> <!-- // right -->
+      <div class="btnarea btnarea__center">
+        <a href="#" class="btn__submit">등록</a>
+        <a href="#" class="btn__cancle">취소</a>
+      </div>
+    </div>
+  </div>
+  <!-- 레이어팝업 끝 -->
+</body>
+</html>

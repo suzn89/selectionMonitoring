@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='user-scalable=yes, width=1920, target-densitydpi=medium-dpi' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>e-Curations</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+<body>
+  <div id="top" class="top">
+    <div class="top__title">
+      <h2>상태모니터링</h2>
+    </div>
+    <div class="top__user">
+      <p class="message"><span class="name">슈퍼관리자</span>님 로그인중입니다.</p>
+      <a href="#" class="btn__logout">로그아웃</a>
+    </div>
+  </div>
+<div id="content">
+    <div class="left">
+      <div class="left__search boxmodel">
+        <h3>개시 대상 조회</h3>
+        <div class="inputarea">
+          <span class="label">
+            검색항목
+          </span>
+          <div class="inputarea__select">
+            <select name="" id="" title="해당항목선택">
+              <option value="">전체</option>
+              <option value="">카메라 아이디</option>
+              <option value="">카메라 이름</option>
+              <option value="">이벤트 종류</option>
+            </select>
+          </div>  
+        </div> <!-- // inputarea 끝-->
+        <div class="inputarea">
+          <span class="label">
+            검색내용
+          </span>
+          <div class="inputarea__text">
+            <input type="text" title="처리자입력" name="" id="" class="ipt_text">
+          </div>  
+        </div> <!-- // inputarea 끝-->
+        <div class="inputarea">
+          <span class="label">
+            검색기간
+          </span>
+          <div class="inputarea__date year">
+            <select name="" id="" title="년">
+              <option value="">2019</option>
+              <option value="">2018</option>
+              <option value="">2017</option>
+              <option value="">2016</option>
+              <option value="">2015</option>
+            </select>            
+          </div>
+          <span class="datetxt">년</span>
+          <div class="inputarea__date month">
+            <select name="" id="" title="월">
+              <option value="">12</option>
+              <option value="">11</option>
+              <option value="">10</option>
+              <option value="">09</option>
+              <option value="">08</option>
+              <option value="">07</option>
+              <option value="">08</option>
+              <option value="">05</option>
+              <option value="">04</option>
+              <option value="">03</option>
+              <option value="">02</option>
+              <option value="">01</option>
+            </select>
+          </div>
+          <span class="datetxt">월</span>
+          <div class="inputarea__date date">
+            <select name="" id="" title="일">
+              <option value="">31</option>
+              <option value="">30</option>
+              <option value="">29</option>
+              <option value="">28</option>
+              <option value="">27</option>
+              <option value="">26</option>
+              <option value="">25</option>
+              <option value="">24</option>
+              <option value="">23</option>
+              <option value="">22</option>
+              <option value="">21</option>
+              <option value="">20</option>
+              <option value="">19</option>
+              <option value="">18</option>
+              <option value="">17</option>
+              <option value="">16</option>
+              <option value="">15</option>
+              <option value="">14</option>
+              <option value="">13</option>
+              <option value="">12</option>
+              <option value="">11</option>
+              <option value="">10</option>
+              <option value="">09</option>
+              <option value="">08</option>
+              <option value="">07</option>
+              <option value="">06</option>
+              <option value="">05</option>
+              <option value="">04</option>
+              <option value="">03</option>
+              <option value="">02</option>
+              <option value="">01</option>
+            </select>
+          </div>
+          <span class="datetxt">일 ~</span>
+          <div class="inputarea__date year">
+            <select name="" id="" title="년">
+              <option value="">2019</option>
+              <option value="">2018</option>
+              <option value="">2017</option>
+              <option value="">2016</option>
+              <option value="">2015</option>
+            </select>            
+          </div>
+          <span class="datetxt">년</span>
+          <div class="inputarea__date month">
+            <select name="" id="" title="월">
+              <option value="">12</option>
+              <option value="">11</option>
+              <option value="">10</option>
+              <option value="">09</option>
+              <option value="">08</option>
+              <option value="">07</option>
+              <option value="">06</option>
+              <option value="">05</option>
+              <option value="">04</option>
+              <option value="">03</option>
+              <option value="">02</option>
+              <option value="">01</option>
+            </select>
+          </div>
+          <span class="datetxt">월</span>
+          <div class="inputarea__date date">
+            <select name="" id="" title="일">
+              <option value="">31</option>
+              <option value="">30</option>
+              <option value="">29</option>
+              <option value="">28</option>
+              <option value="">27</option>
+              <option value="">26</option>
+              <option value="">25</option>
+              <option value="">24</option>
+              <option value="">23</option>
+              <option value="">22</option>
+              <option value="">21</option>
+              <option value="">20</option>
+              <option value="">19</option>
+              <option value="">18</option>
+              <option value="">17</option>
+              <option value="">16</option>
+              <option value="">15</option>
+              <option value="">14</option>
+              <option value="">13</option>
+              <option value="">12</option>
+              <option value="">11</option>
+              <option value="">10</option>
+              <option value="">09</option>
+              <option value="">08</option>
+              <option value="">07</option>
+              <option value="">06</option>
+              <option value="">05</option>
+              <option value="">04</option>
+              <option value="">03</option>
+              <option value="">02</option>
+              <option value="">01</option>
+            </select>
+          </div>
+          <span class="datetxt">일</span>
+        </div> <!-- // inputarea 끝-->
+        <div class="btnarea">
+          <a href="#" class="btn__big--orange">조회</a>
+        </div>
+      </div>
+      <a href="#" class="left__btn--close"><span class="blind">패널조작버튼</span></a> <!-- 패널 조작버튼 추가 -->
+    </div> <!-- // left -->
+
+    <div class="center row2">
+      <div class="article">
+        <h3>알고리즘 개시 대상 목록</h3>
+        <div class="pageinfo">
+          <div class="pageinfo__all">전체 <span class="pageinfo__all--orange">60</span>건</div>
+          <span class="pageinfo__page"><span class="pageinfo__page--orange">1</span>/3 Page</span>
+        </div>
+        <div class="topbtn">
+          <div class="btnarea btnarea__right">
+            <a href="#" class="btn__primary">선택항목 개시</a>
+            <!-- openmodal 클릭시 레이어팝업 노출 -->
+          </div>
+        </div>
+        <div class="datalist">
+          <table>
+            <colgroup>
+              <col style="width:30px;">
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th><span class="input"><input type="checkbox" name="" id="checkbox" class="input__checkbox"><label for="checkbox" class="ir">전체선택</label></span></th>
+                <th>발생일시</th>
+                <th>카메라</th>
+                <th>카메라 이름</th>
+                <th>이벤트 종류</th>
+                <th>개소(위치)명</th>
+                <th>상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="input"><input type="checkbox" name="" id="checkbox2" class="input__checkbox"><label for="checkbox2" class="ir">전체선택</label></div></td>
+                <td>2019-05-02 15:00:09</td>
+                <td>camera1</td>
+                <td>카메라1</td>
+                <td>쓰러짐</td>
+                <td>성동구</td>
+                <td>중지</td>
+                
+              </tr>
+              <tr>
+                <td><div class="input"><input type="checkbox" name="" id="checkbox2" class="input__checkbox" checked><label for="checkbox2" class="ir">전체선택</label></div></td>
+                <td>2019-05-02 15:00:09</td>
+                <td>camera1</td>
+                <td>카메라1</td>
+                <td>쓰러짐</td>
+                <td>성동구</td>
+                <td>중지</td>
+              </tr>
+              <tr>
+                <td><div class="input"><input type="checkbox" name="" id="checkbox3" class="input__checkbox" disabled><label for="checkbox3" class="ir">전체선택</label></div></td>
+                <td>2019-05-02 15:00:09</td>
+                <td>camera1</td>
+                <td>카메라1</td>
+                <td>쓰러짐</td>
+                <td>성동구</td>
+                <td>중지</td>
+              </tr>
+            </tbody>
+          </table> 
+        </div> <!-- // datalist  -->  
+        <div class="pagenation">
+          <ul>
+            <li><a href="#" class="pagenation__btn"><i class="icon-leftarrow"></i><span class="blind">이전</span></a></li>
+            <li><a href="#" class="pagenation__btn--current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#" class="pagenation__btn--next"><i class="icon-rightarrow"></i><span class="blind">다음</span></a></li>         
+          </ul>
+        </div>      
+      </div>     
+    </div> <!-- // center -->
+  </div> <!-- // content -->
+</body>
+</html>

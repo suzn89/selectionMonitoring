@@ -101,6 +101,43 @@
   color: #b0b1b3;
 }
 
+.inputarea .datetxt {
+  color: #b0b1b3;
+}
+
+.inputarea__date {
+  position: relative;
+  border: 1px solid #b0b1b3;
+  display: inline-block;
+}
+
+.inputarea__date select {
+  font-size: 13px;
+}
+
+.inputarea__date:after {
+  position: absolute;
+  font-family: 'ecurations';
+  content: '\e905';
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #b0b1b3;
+  right: 10px;
+  top: 10px;
+  font-size: 10px;
+}
+
+.inputarea .year {
+  width: 70px;
+  margin-bottom: 5px;
+}
+
+.inputarea .month,
+.inputarea .date {
+  width: 50px;
+  margin-bottom: 5px;
+}
+
 .inputarea__text {
   display: inline-block;
   position: relative;

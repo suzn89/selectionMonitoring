@@ -286,6 +286,49 @@
   width: 500px;
 }
 
+.roi .modal__contents {
+  padding: 30px 40px;
+}
+
+.roi .modal__contents .left {
+  float: none;
+  margin: 0 auto;
+}
+
+.roi .modal__contents .left > img {
+  width: 100%;
+  border: 4px solid #232323;
+}
+
+.roi .modal__contents .left .mouseposi {
+  padding: 5px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #232323;
+  color: #b0b1b3;
+}
+
+.roi .modal__contents .left .inputarea {
+  float: left;
+  width: 200px;
+  height: 35px;
+  margin-bottom: 30px;
+}
+
+.roi .modal__contents .left .inputarea__select {
+  border: 0;
+}
+
+.roi .modal__contents .left .inputarea__select select {
+  padding: 7px 10px;
+  background: #404040;
+}
+
+.roi .modal__contents .left .inputarea + .inputarea {
+  margin-left: 5px;
+  width: 365px;
+}
+
 .size2 .modal__contents .left {
   float: none;
   margin: 0 auto;

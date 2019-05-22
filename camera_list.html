@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='user-scalable=yes, width=1920, target-densitydpi=medium-dpi' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>e-Curations</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+<body>
+  <div id="top" class="top">
+    <div class="top__title">
+      <h2>채널관리</h2>
+    </div>
+    <div class="top__user">
+      <p class="message"><span class="name">슈퍼관리자</span>님 로그인중입니다.</p>
+      <a href="#" class="btn__logout">로그아웃</a>
+    </div>
+  </div>
+<div id="content">
+    <div class="left">
+      <div class="left__search boxmodel">
+        <h3>카메라 조회</h3>
+        <div class="inputarea">
+          <span class="label">
+            검색항목
+          </span>
+          <div class="inputarea__select">
+            <select name="" id="" title="해당항목선택">
+              <option value="">전체</option>
+              <option value="">아이디</option>
+              <option value="">이름</option>
+              <option value="">IP</option>
+              <option value="">모델</option>
+              <option value="">제조사</option>
+            </select>
+          </div>  
+        </div> <!-- // inputarea 끝-->
+        <div class="inputarea">
+          <span class="label">
+            검색내용
+          </span>
+          <div class="inputarea__text">
+            <input type="text" title="처리자입력" name="" id="" class="ipt_text">
+          </div>  
+        </div> <!-- // inputarea 끝-->
+        <div class="btnarea">
+          <a href="#" class="btn__big--orange">조회</a>
+        </div>
+      </div>
+      <a href="#" class="left__btn--close"><span class="blind">패널조작버튼</span></a> <!-- 패널 조작버튼 추가 -->
+    </div> <!-- // left -->
+
+    <div class="center row2">
+      <div class="article">
+        <h3>카메라 목록</h3>
+        <div class="pageinfo">
+          <div class="pageinfo__all">전체 <span class="pageinfo__all--orange">60</span>건</div>
+          <span class="pageinfo__page"><span class="pageinfo__page--orange">1</span>/3 Page</span>
+        </div>
+        <div class="topbtn">
+          <div class="btnarea btnarea__right">
+            <a href="#" class="btn__check openmodal">레이어팝업열기(ROI설정)</a>  <!-- 작업시 해당 버튼은 삭제 -->
+            <!-- openmodal 클릭시 레이어팝업 노출 -->
+          </div>
+        </div>
+        <div class="datalist">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>이름</th>
+                <th>IP</th>
+                <th>제조사</th>
+                <th>PTZ사용여부</th>
+                <th>PTZ IP</th>
+                <th>PTZ PORT</th>
+                <th>사용여부</th>
+                <th>접속ID</th>
+                <th>접속PASS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>id</td>                
+                <td>camera1</td>
+                <td>000.0000.000.000</td>
+                <td>제조사</td>
+                <td>Y</td>
+                <td>000.000.000.000</td>
+                <td>0000</td>
+                <td>Y</td>
+                <td>admin</td>
+                <td>******</td>
+                
+              </tr>
+            </tbody>
+          </table> 
+        </div> <!-- // datalist  -->  
+        <div class="pagenation">
+          <ul>
+            <li><a href="#" class="pagenation__btn"><i class="icon-leftarrow"></i><span class="blind">이전</span></a></li>
+            <li><a href="#" class="pagenation__btn--current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#" class="pagenation__btn--next"><i class="icon-rightarrow"></i><span class="blind">다음</span></a></li>         
+          </ul>
+        </div>      
+      </div>     
+    </div> <!-- // center -->
+  </div> <!-- // content -->
+    <!-- 레이어팝업 시작 -->
+  <div class="modal roi">
+    <div class="modal__top">
+      <h3>ROI 설정</h3>
+      <a href="#" class="close"><i class="icon-close"></i></a>
+    </div>
+    <div class="modal__contents">
+      <div class="left"> <!-- 인풋 왼쪽-->
+        <img src="/images/test.png" alt=""> <!-- 썸네일 이미지-->
+        <p class="mouseposi">Mouse Position (<span>634, 808</span>)</p>
+        <div class="inputarea">
+          <div class="inputarea__select">
+            <select name="" id="" title="해당항목선택">
+              <option value="">선택항목</option>
+              <option value="">침입</option>
+              <option value="">배회</option>
+              <option value="">쓰러짐</option>
+              <option value="">화재</option>
+              <option value="">사용안함</option>
+            </select>   
+          </div>
+        </div> <!-- // inputarea 끝--> 
+        <div class="inputarea">
+          <div class="inputarea__text">
+            <input type="text" title="아이디입력" name="" id="" class="ipt_text check">
+            <a href="#">전체</a>
+          </div>
+        </div> <!-- // inputarea 끝--> 
+
+      <div class="btnarea btnarea__center">
+        <a href="#" class="btn__submit">저장</a>
+        <a href="#" class="btn__cancle close">닫기</a>
+      </div>
+    </div>
+  </div>
+  <!-- 레이어팝업 끝 -->
+</body>
+</html>

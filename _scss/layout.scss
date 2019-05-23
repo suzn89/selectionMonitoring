@@ -415,6 +415,18 @@ body {
             background:$secondaryColor;
           }
         }
+        .jqgfirstrow {
+          th,td {
+            padding:8px;
+            color:$fontData;
+            font-weight:normal;
+            font-size:12px;
+            color:$fontWhite;
+            text-align:left;
+            word-break:keep-all;
+            border-bottom:1px solid #414141;
+          }
+        }
         // 리스트 보기 방식
         th,td {
           padding:8px;
@@ -592,7 +604,17 @@ body {
               z-index:201;
             }            
           }                
-        }
+        }        
+      }
+      .datalist.w60 { 
+        clear: both;
+        width: 59%;
+        float: left;
+      }
+      .datalist.w40 {         
+        clear: none;
+        float: right;
+        width: 40%;        
       }
       .pageinfo {
         float:left;
@@ -752,9 +774,10 @@ body {
         width:100%;
         overflow-y:auto;
         background:$bgColor;
+        
         table {
           width:100%;
-        }
+        }        
         th,td {
           padding:8px;
           color:$fontData;
@@ -770,7 +793,7 @@ body {
           color:$fontWhite;
         }       
       }
-    }
+    }    
   }
 }
 #content .manager {

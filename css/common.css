@@ -789,6 +789,8 @@
 }
 
 .pagenation {
+  float:left;
+  clear:both;
   width: 100%;
   margin-top: 8px;
 }

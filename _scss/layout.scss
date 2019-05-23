@@ -435,6 +435,11 @@ body {
             color:$fontWhite;
           }
         }
+        td > .star {
+          display: block;          
+          font-size: 14px;
+          color: $warningColor;
+        }
         // 썸네일 보기방식 
         .itemlist>li {
           float:left;

@@ -438,7 +438,8 @@
 }
 
 .option {
-  width: 800px;
+  width: calc(100vw - 210px);
+  min-width: 800px;
   overflow-x: auto;
 }
 

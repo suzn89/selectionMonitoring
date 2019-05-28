@@ -406,7 +406,8 @@ $selectDisable:#575757;
 }
 // 설정 인풋스타일
 .option {
-  width: 800px;
+  width: calc(100vw - 210px);
+  min-width: 800px;
   overflow-x:auto;
   .inputarea {
     width: 600px;

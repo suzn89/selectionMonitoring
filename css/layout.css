@@ -1069,6 +1069,7 @@ body {
 @media (max-width: 1279px) {
   body {
     min-width: 1024px;
+    overflow-x: auto;
   }
   .logintext {
     position: absolute;
